@@ -64,6 +64,7 @@ VITE_SUPABASE_ANON_KEY=sb_publishable_z3T6HpNAFARnOYxz_juiFw_upv0FNWo
 ```
 
 5. **Inicia el servidor de desarrollo**
+prueba
 ```bash
 npm run dev
 ```
