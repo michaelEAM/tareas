@@ -1,5 +1,5 @@
 import React from 'react';
-import { Task } from '../types';
+import type { Task } from '../types';
 import { formatDate, getTaskStatusColor, getPriorityIcon } from '../utils';
 import { Badge } from './Badge';
 import { getTaskStatusBadgeColor, getPriorityBadgeColor } from '../utils';
