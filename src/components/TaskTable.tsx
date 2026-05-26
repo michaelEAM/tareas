@@ -1,5 +1,5 @@
 import React from 'react';
-import { type Task } from '../types/Task';
+import { type Task } from '../types/task';
 
 import { dateUtils } from '../utils/dateUtils';
 
