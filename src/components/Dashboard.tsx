@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Task } from '../types';
+import type { Task } from '../types';
 import { StatCard } from './StatCard';
 import { FilterBar } from './FilterBar';
 import { TaskModal } from './TaskModal';

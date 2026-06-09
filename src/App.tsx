@@ -63,9 +63,17 @@ function App() {
       (t) => t.estado === 'Terminada'
     ).length;
 
-    const vencidas = tasks.filter(
-      (t) => t.estado === 'Vencida'
-    ).length;
+  const vencidas = tasks.filter((t) => {
+  if (t.estado === 'Terminada') return false;
+
+  const hoy = new Date();
+  hoy.setHours(0, 0, 0, 0);
+
+  const fechaLimite = new Date(t.fecha_limite);
+  fechaLimite.setHours(0, 0, 0, 0);
+
+  return fechaLimite < hoy;
+}).length;
 
     return {
       total,
